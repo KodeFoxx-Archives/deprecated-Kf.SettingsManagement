@@ -54,7 +54,7 @@ namespace Kf.SettingsManagement
         /// <summary>
         /// Loads the settings.
         /// </summary>
-        protected virtual void LoadSettings() {
+        public virtual IEnumerable<Setting> LoadSettings() {
             try {
                 var settings = _settingsReader.Read();
                 var settingsDictionary = new Dictionary<string, Setting>();
@@ -65,6 +65,7 @@ namespace Kf.SettingsManagement
                 }
 
                 _settings = settingsDictionary;
+                return _settings.Values;
             } catch (Exception ex) {
                 string exceptionMessage = $"Exception '{ex.ToFriendlyNameOfType()}' occurred while loading settings.";                                                
                 throw new SettingsException(exceptionMessage, ex);
