@@ -12,12 +12,5 @@ namespace Kf.SettingsManagement
         /// </summary>
         /// <returns>An enumerable of <see cref="Setting"/>.</returns>
         IEnumerable<Setting> Read();
-
-        /// <summary>
-        /// Gets a setting by it's key.
-        /// </summary>
-        /// <param name="key">The setting's key.</param>
-        /// <returns>The <see cref="Setting"/>, or null.</returns>
-        Setting GetByKey(string key);
     }
 }

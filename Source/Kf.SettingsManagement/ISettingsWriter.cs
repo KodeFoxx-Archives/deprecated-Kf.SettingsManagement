@@ -12,11 +12,5 @@ namespace Kf.SettingsManagement
         /// </summary>
         /// <param name="settings">The settings to write.</param>
         void Write(IEnumerable<Setting> settings);
-
-        /// <summary>
-        /// Saves the given setting.
-        /// </summary>
-        /// <param name="setting">The setting to save.</param>
-        void Save(Setting setting);
     }
 }
