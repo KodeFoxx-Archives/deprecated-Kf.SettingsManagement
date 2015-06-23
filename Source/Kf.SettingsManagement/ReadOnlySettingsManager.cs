@@ -24,7 +24,7 @@ namespace Kf.SettingsManagement
         /// <param name="settingsReader">The settings reader to use.</param>
         public ReadOnlySettingsManager(ISettingsReader settingsReader) {
             if (settingsReader == null) {
-                throw new ArgumentNullException("settingsReader");
+                throw new ArgumentNullException(nameof(settingsReader));
             }
 
             _settingsReader = settingsReader;
