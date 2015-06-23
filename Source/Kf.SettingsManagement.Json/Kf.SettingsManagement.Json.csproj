@@ -46,6 +46,8 @@
     <Compile Include="LambdaJsonSettingsReader.cs" />
     <Compile Include="LambdaJsonSettingsWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StreamJsonSettingsReader.cs" />
+    <Compile Include="StreamJsonSettingsWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Kf.Core, Version=1.0.5640.24699, Culture=neutral, processorArchitecture=MSIL">
