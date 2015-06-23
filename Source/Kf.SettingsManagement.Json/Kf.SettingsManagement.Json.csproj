@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="JsonSettingsReader.cs" />
     <Compile Include="JsonSettingsWriter.cs" />
+    <Compile Include="LambdaJsonSettingsReader.cs" />
+    <Compile Include="LambdaJsonSettingsWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
