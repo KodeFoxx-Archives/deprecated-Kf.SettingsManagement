@@ -44,7 +44,7 @@ namespace Kf.SettingsManagement
 
             if (!CheckIfKeyExists(formattedKey)) {
                 var keyNotFoundMessage = $"The given key '{formattedKey}' is not found.";
-                var keyNotFoundException = new SettingsException(keyNotFoundMessage);                
+                var keyNotFoundException = new SettingsManagementException(keyNotFoundMessage);                
                 throw keyNotFoundException;
             } else {
                 return _settings[key];
@@ -68,7 +68,7 @@ namespace Kf.SettingsManagement
                 return _settings.Values;
             } catch (Exception ex) {
                 string exceptionMessage = $"Exception '{ex.ToFriendlyNameOfType()}' occurred while loading settings.";                                                
-                throw new SettingsException(exceptionMessage, ex);
+                throw new SettingsManagementException(exceptionMessage, ex);
             }
         }
 
